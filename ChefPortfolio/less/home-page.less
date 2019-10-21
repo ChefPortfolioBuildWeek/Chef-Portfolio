@@ -11,8 +11,7 @@ header {
 }
 
 .home-about{
-    display:flex;
-    justify-content:space-around;
+    .Flex(space-around);
     padding: 3.5rem 0;
     
     .home-about-text{
@@ -20,9 +19,8 @@ header {
             color:@main-color;
 
         }
-        display:flex;
-        flex-direction:column;
-        justify-content:space-evenly;
+        .Flex(space-evenly,@direction:column);
+        
         width:35%;
         a{
             text-decoration:none;
@@ -44,4 +42,56 @@ header {
     img{
         width:35%;
     }
+}
+
+.home-app-info {
+    background-color:@light-main;
+    color:@dark-main;
+    text-align:center;
+    padding:3rem 0;
+    h2{
+        padding-bottom:1.5rem;
+    }
+    .content-app-info{
+        .Flex(space-evenly,@direction:column);
+        
+        div{
+            .Flex(space-around);
+            text-align:left;
+            padding: 3.5rem 0;
+            align-content:center;
+            .about-text{
+                width:25%;
+                .Flex(space-around,@direction:column);
+                h3{
+                    font-size:1.8rem;
+
+                }
+                p{
+                    line-height:1.8rem;
+                }
+            }
+            img{
+                width:40%;
+            }
+            .text-01{
+                order:2;
+                justify-content:center;
+                align-content:center;
+                h3{
+                    padding-bottom:5rem;
+                }
+                p{
+                    
+                    line-height:1.8rem;
+
+                }
+            }
+            .img-01{
+                order:1;
+            }
+        }
+    }
+
+    
 }
