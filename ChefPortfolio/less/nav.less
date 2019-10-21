@@ -6,16 +6,26 @@
         align-content:center;
     nav {
         display:flex;
-        justify-content:space-between;
+        justify-content:space-around;
         align-items:center;
         width:50%;
         a {
             text-decoration:none;
             color:@dark-main;
+            font-size:1.8rem;
+            line-height:2.8rem;
+            padding:0 1rem;
+            font-weight:800;
+            &:hover{
+                color:@light-main;
+                cursor:pointer;
+                background-color:@dark-main;
+            }
         }
     }
     h1{
         font-size:2.5rem;
+        letter-spacing:1px;
     }
     h1 span {
         color:@main-color;

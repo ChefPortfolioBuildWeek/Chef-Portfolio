@@ -7,6 +7,41 @@ header {
     height:45vh;
 
 
-
      
+}
+
+.home-about{
+    display:flex;
+    justify-content:space-around;
+    padding: 3.5rem 0;
+    
+    .home-about-text{
+        h2{
+            color:@main-color;
+
+        }
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        width:35%;
+        a{
+            text-decoration:none;
+            border:1px solid @dark-main;
+            width:16rem;
+            padding: .5rem 1.8rem;
+            text-align:center;
+            font-weight:bold;
+            color:@dark-main;
+            background:@main-color;
+            font-size:1.5rem;
+            &:hover{
+                background-color:@dark-main;
+                color:@main-color;
+            }
+        }
+        
+    }
+    img{
+        width:35%;
+    }
 }
