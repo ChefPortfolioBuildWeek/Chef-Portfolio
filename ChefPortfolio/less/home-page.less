@@ -12,16 +12,33 @@ header {
 
 .home-about{
     .Flex(space-around);
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
+    @media @phone{
+        flex-direction:column;
+        padding: 2.5rem 0 0 0;
+    }
     
     .home-about-text{
+        @media @phone{
+            
+            width:100%;
+            padding:1rem 1rem 3rem 1rem;
+            justify-content: center;
+            align:center;
+        }
+        
+        .Flex(space-evenly,@direction:column);
+        
+        width:35%;
         h2{
             color:@main-color;
 
         }
-        .Flex(space-evenly,@direction:column);
-        
-        width:35%;
+        p{
+            @media @phone{
+                padding:2rem 0;
+            }
+        }
         a{
             text-decoration:none;
             border:1px solid @dark-main;
@@ -41,6 +58,11 @@ header {
     }
     img{
         width:35%;
+        @media @phone{
+            
+            width:100%;
+            align-self:flex-end;
+        }
     }
 }
 
@@ -55,24 +77,42 @@ header {
     .content-app-info{
         .Flex(space-evenly,@direction:column);
         
+        
         div{
             .Flex(space-around);
             text-align:left;
             padding: 3.5rem 0;
             align-content:center;
+            @media @phone{
+                flex-direction:column;
+            }
             .about-text{
                 width:25%;
                 .Flex(space-around,@direction:column);
+                @media @phone{
+                    width:100%;
+                    order:2;
+                    align-items:center;
+                    padding:0 2rem;
+                }
                 h3{
                     font-size:1.8rem;
+                    @media @phone{
+                        padding:5rem;
+                    }
 
                 }
                 p{
                     line-height:1.8rem;
+
                 }
             }
             img{
                 width:40%;
+                @media @phone{
+                    width:100%;
+                    order:1;
+                }
             }
             .text-01{
                 order:2;

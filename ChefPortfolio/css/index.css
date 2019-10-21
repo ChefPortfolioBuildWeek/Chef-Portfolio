@@ -30,7 +30,7 @@ h2 {
   font-size: 2.4rem;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 h1,
 h2,
@@ -45,12 +45,22 @@ h3 {
   align-items: center;
   padding: 1rem 0;
 }
+@media (max-width:500px) {
+  .text-container {
+    flex-direction: column;
+  }
+}
 .text-container nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 50%;
+}
+@media (max-width:500px) {
+  .text-container nav {
+    width: 100%;
+  }
 }
 .text-container nav a {
   text-decoration: none;
@@ -70,6 +80,11 @@ h3 {
   font-size: 2.5rem;
   letter-spacing: 1px;
 }
+@media (max-width:500px) {
+  .text-container h1 {
+    padding-bottom: 1.5rem;
+  }
+}
 .text-container h1 span {
   color: #3cc43c;
 }
@@ -85,7 +100,13 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: inherits;
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
+}
+@media (max-width:500px) {
+  .home-about {
+    flex-direction: column;
+    padding: 2.5rem 0 0 0;
+  }
 }
 .home-about .home-about-text {
   display: flex;
@@ -94,8 +115,21 @@ header {
   align-items: inherits;
   width: 35%;
 }
+@media (max-width:500px) {
+  .home-about .home-about-text {
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+}
 .home-about .home-about-text h2 {
   color: #3cc43c;
+}
+@media (max-width:500px) {
+  .home-about .home-about-text p {
+    padding: 2rem 0;
+  }
 }
 .home-about .home-about-text a {
   text-decoration: none;
@@ -114,6 +148,12 @@ header {
 }
 .home-about img {
   width: 35%;
+}
+@media (max-width:500px) {
+  .home-about img {
+    width: 100%;
+    align-self: flex-end;
+  }
 }
 .home-app-info {
   background-color: #edf9f3;
@@ -139,6 +179,11 @@ header {
   padding: 3.5rem 0;
   align-content: center;
 }
+@media (max-width:500px) {
+  .home-app-info .content-app-info div {
+    flex-direction: column;
+  }
+}
 .home-app-info .content-app-info div .about-text {
   width: 25%;
   display: flex;
@@ -146,14 +191,33 @@ header {
   justify-content: space-around;
   align-items: inherits;
 }
+@media (max-width:500px) {
+  .home-app-info .content-app-info div .about-text {
+    width: 100%;
+    order: 2;
+    align-items: center;
+    padding: 0 2rem;
+  }
+}
 .home-app-info .content-app-info div .about-text h3 {
   font-size: 1.8rem;
+}
+@media (max-width:500px) {
+  .home-app-info .content-app-info div .about-text h3 {
+    padding: 5rem;
+  }
 }
 .home-app-info .content-app-info div .about-text p {
   line-height: 1.8rem;
 }
 .home-app-info .content-app-info div img {
   width: 40%;
+}
+@media (max-width:500px) {
+  .home-app-info .content-app-info div img {
+    width: 100%;
+    order: 1;
+  }
 }
 .home-app-info .content-app-info div .text-01 {
   order: 2;
