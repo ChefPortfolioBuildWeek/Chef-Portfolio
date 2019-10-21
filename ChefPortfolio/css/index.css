@@ -6,3 +6,49 @@
 html {
   font-size: 62.5%;
 }
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6ufN5qA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v9/BngRUXZYTXPIvIBgJJSb6u92w7CGwRg.ttf) format('truetype');
+}
+html {
+  font-style: 'Roboto Slab' serif;
+}
+header {
+  background-image: url(../images/home-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45vh;
+}
+.text-container {
+  background-color: #edf9f3;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.text-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.text-container nav a {
+  text-decoration: none;
+  color: #47624f;
+}
+.text-container h1 {
+  font-size: 2.5rem;
+}
+.text-container h1 span {
+  color: #43db43;
+}
