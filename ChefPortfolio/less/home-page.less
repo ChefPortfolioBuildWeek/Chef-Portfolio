@@ -135,3 +135,46 @@ header {
 
     
 }
+.contact{
+    .Flex(center,center,column);
+    height:80vh;
+    h2{
+        color:@main-color;
+        padding-bottom:3rem;
+    }
+    .contact-container{
+        height:75%;
+        width:75%;
+        background-image:linear-gradient(125deg,@light-main 50%,rgba(255,255,255,0.5) 50%,transparent 50%),url(../images/email-list.jpg);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        display:flex;
+        align-items:center;
+
+        
+        form{
+            
+            .Flex(space-evenly,center,@direction:column);
+            width:25%;
+            height:50%;
+            margin-left:10rem;
+            @media @mid{
+                width:100%;
+                margin-left:0;
+            }
+            #submit{
+                
+                background-color:@main-color;
+                color:@dark-main;
+                font-weight:700;
+                border:1px solid #000;
+                padding:.5rem 1.5rem;
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+            
+        }
+    }
+}
