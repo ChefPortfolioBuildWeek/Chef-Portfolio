@@ -1,27 +1,20 @@
-.container{
-    @media @desktop{
-        .Flex(space-evenly,@direction:row);
-    }
-    div{
-        @media @desktop{
-            width:65%;
-        }
-    }
+
+.continer {
+   @media @desktop{
+       max-width:1000px;
+       margin:0 auto;
+   }
 }
 header {
+
     //Background settings for image
     background-image:url(../images/home-banner.jpg);
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    height:45vh;
-    @media @desktop{
-        width:25%;
-
-    }
-
-     
+    height:55vh;
 }
+
 
 .home-about{
     .Flex(space-around);
@@ -191,3 +184,4 @@ header {
         }
     }
 }
+
