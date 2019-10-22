@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Nunito+Sans&display=swap');
 /* General Styles */
 * {
   box-sizing: border-box;
@@ -12,13 +11,13 @@ html {
 body {
   line-height: 2;
   font-size: 1.5rem;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 3px;
   padding: 4% 0;
 }
@@ -33,14 +32,14 @@ i {
 header {
   height: 70vh;
   background-color: #e0ffff;
-  background-image: ;
+  //   background-image: ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 .title-container {
-  height: 80vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,26 +69,29 @@ header {
 }
 /* End Of About Section Styles */
 /* Skills Section Styles */
-#skills {
+.skills {
   background-color: #3cc43c;
-}
-#skills h2 {
-  text-align: center;
-  padding: 3% 0;
-}
-#skills .contanier {
-  display: flex;
-  justify-content: space-around;
-}
 
-#skills .contanier div {
-  text-align: center;
-  width: 25%;
-}
-#skills .contanier div p {
-  text-align: justify;
-}
+  h2 {
+    text-align: center;
+    padding: 3% 0;
+  }
+  h3 {
+    color: @light-acc;
+  }
+  .contanier {
+    display: flex;
+    justify-content: space-around;
+  }
 
+  .contanier div {
+    text-align: center;
+    width: 25%;
+  }
+  .contanier div p {
+    text-align: justify;
+  }
+}
 /* End Of Skills Section */
 
 /* Experience Section Styles */
@@ -165,130 +167,211 @@ footer nav {
 /* End Of Footer Section Styles */
 
 /* Boxing Start */
+.CUISINE {
+  .Boxing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-.box {
-  width: 100px;
-  height: 100px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0% 0;
-  margin-left: 2%;
-  width: 20%;
-}
-
-.Boxing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.food {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food1 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food2 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food3 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food4 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food5 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food6 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food7 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food8 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-.food9 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-
-/*Boxing End */
-// Mobile var
-@phone: ~"(max-width: 500px)";
-
-/*Media Qurries*/
-@media (max-width: 500px) {
-    .experience .Boxing .food {
-      flex-direction: column;
+    .box {
+      width: 100px;
+      height: 100px;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0% 0;
+      margin-left: 2%;
+      width: 20%;
+      padding: 0% 0% 0% 0%;
     }
-    .experience .Boxing .box .food2 {
-      display: none;
+    .food {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
     }
-    .box .boxing .food3 {
-      display: none;
+    .food1 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
+    }
+    .food2 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
+    }
+    .food3 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
+    }
+    .food4 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
+    }
+    .food5 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
+    }
+    .food6 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
+    }
+    .food7 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
+    }
+    .food8 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
+    }
+    .food9 {
+      width: 42rem;
+      height: 13rem;
+      background: white;
+      margin: 20px 2.5%;
+      //   display: flex;
+      //   justify-content: space-evenly;
+      //   align-content: space-between;
     }
   }
+}
+/*Boxing End */
+
+/*Media Qurries*/
+header {
+  //Background settings for image
+  background-image: url(../images/home-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45vh;
+}
+
+.about {
+  @media @phone {
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+
+  .Flex(space-evenly, @direction:column);
+
+  width: 35%;
+  text {
+    display-flex: center;
+  }
+  h2 {
+    color: @main-color;
+  }
+  p {
+    @media @phone {
+      padding: 2rem 0;
+    }
+  }
+}
+
+.skills {
+  @media @phone {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+
+  .contanier {
+    @media @phone {
+      .Flex(space-between, center, column);
+      width: 100%;
+    }
+    div {
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    p {
+      @media @phone {
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+
+.CUISINE {
+  @media @phone {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .Boxing {
+    @media @phone {
+      width: 50%;
+      height: 50%;
+      color: white;
+      display: flex;
+      flex: wrap;
+      @media @phone {
+        .Flex(space-between, center, column);
+        .box {
+          @media @phone {
+          }
+          .food2 {
+            @media @phone {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

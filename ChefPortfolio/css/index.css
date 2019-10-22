@@ -37,13 +37,13 @@ html {
 }
 .text-container nav a {
   text-decoration: none;
-  color: #47624f;
+  color: #3d5544;
 }
 .text-container h1 {
   font-size: 2.5rem;
 }
 .text-container h1 span {
-  color: #43db43;
+  color: #3cc43c;
 }
 header {
   background-image: url(../images/home-banner.jpg);
@@ -72,20 +72,6 @@ header {
   text-align: justify;
 }
 /* End Of Skills Section */
-@font-face {
-  font-family: 'Fjalla One';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFrOF6lw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
-}
 /* General Styles */
 * {
   box-sizing: border-box;
@@ -99,13 +85,13 @@ html {
 body {
   line-height: 2;
   font-size: 1.5rem;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 3px;
   padding: 4% 0;
 }
@@ -119,14 +105,13 @@ i {
 header {
   height: 70vh;
   background-color: #e0ffff;
-  background-image: ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 .title-container {
-  height: 80vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,22 +140,25 @@ header {
 }
 /* End Of About Section Styles */
 /* Skills Section Styles */
-#skills {
+.skills {
   background-color: #3cc43c;
 }
-#skills h2 {
+.skills h2 {
   text-align: center;
   padding: 3% 0;
 }
-#skills .contanier {
+.skills h3 {
+  color: #9ffcdf;
+}
+.skills .contanier {
   display: flex;
   justify-content: space-around;
 }
-#skills .contanier div {
+.skills .contanier div {
   text-align: center;
   width: 25%;
 }
-#skills .contanier div p {
+.skills .contanier div p {
   text-align: justify;
 }
 /* End Of Skills Section */
@@ -244,7 +232,12 @@ footer nav {
 }
 /* End Of Footer Section Styles */
 /* Boxing Start */
-.box {
+.CUISINE .Boxing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.CUISINE .Boxing .box {
   width: 100px;
   height: 100px;
   color: white;
@@ -255,100 +248,162 @@ footer nav {
   margin: 0% 0;
   margin-left: 2%;
   width: 20%;
+  padding: 0% 0% 0% 0%;
 }
-.Boxing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.food {
+.CUISINE .Boxing .food {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food1 {
+.CUISINE .Boxing .food1 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food2 {
+.CUISINE .Boxing .food2 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food3 {
+.CUISINE .Boxing .food3 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food4 {
+.CUISINE .Boxing .food4 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food5 {
+.CUISINE .Boxing .food5 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food6 {
+.CUISINE .Boxing .food6 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food7 {
+.CUISINE .Boxing .food7 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food8 {
+.CUISINE .Boxing .food8 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food9 {
+.CUISINE .Boxing .food9 {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
 /*Boxing End */
+/*Media Qurries*/
+header {
+  background-image: url(../images/home-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45vh;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: inherits;
+  width: 35%;
+}
+@media (max-width:500px) {
+  .about {
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+}
+.about text {
+  display-flex: center;
+}
+.about h2 {
+  color: #3cc43c;
+}
+@media (max-width:500px) {
+  .about p {
+    padding: 2rem 0;
+  }
+}
+@media (max-width:500px) {
+  .skills {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+}
+@media (max-width:500px) {
+  .skills .contanier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .skills .contanier div {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .skills .contanier p {
+    padding: 2rem 0;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+}
+.CUISINE h2 {
+  text-align: center;
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing {
+    width: 50%;
+    height: 50%;
+    color: white;
+    display: flex;
+    flex: wrap;
+  }
+}
+@media (max-width:500px) and (max-width:500px) {
+  .CUISINE .Boxing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width:500px) and (max-width:500px) and (max-width:500px) {
+  .CUISINE .Boxing .box .food2 {
+    display: none;
+  }
+}
