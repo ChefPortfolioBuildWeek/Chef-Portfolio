@@ -26,28 +26,57 @@ html {
 .text-container {
   background-color: #edf9f3;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
+  padding: 1rem 0 ;
+}
+@media (max-width:500px) {
+  .text-container {
+    flex-direction: column;
+  }
 }
 .text-container nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   width: 50%;
+}
+@media (max-width:500px) {
+  .text-container nav {
+    width: 100%;
+  }
 }
 .text-container nav a {
   text-decoration: none;
   color: #3d5544;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-weight: 800;
+}
+.text-container nav a:hover {
+  color: #edf9f3;
+  cursor: pointer;
+  background-color: #3d5544;
 }
 .text-container h1 {
   font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+@media (max-width:500px) {
+  .text-container h1 {
+    padding-bottom: 1.5rem;
+  }
 }
 .text-container h1 span {
   color: #3cc43c;
 }
 /* Footer Section Styles */
 footer {
-  background-color: #e0ffff;
+  background-color: #3cc43c;
   padding: 3% 0;
   text-align: center;
 }
@@ -60,27 +89,27 @@ textarea {
 input,
 textarea {
   border: none;
-  border-bottom: 3px solid #00ced1;
-  background-color: #e0ffff;
+  border-bottom: 3px solid #3d5544;
+  background-color: #edf9f3;
 }
 footer nav {
   width: 80%;
 }
 footer nav:hover {
-  color: #fde769;
+  color: #edf9f3;
 }
 button {
   width: 100%;
-  background-color: #00ced1;
-  color: #fde769;
+  background-color: #3d5544;
+  color: #9ffcdf;
   padding: 2% 0;
-  border: 2px solid #fde769;
+  border: 2px solid #9ffcdf;
   margin-bottom: 3%;
 }
 button:hover {
-  background-color: #fde769;
-  color: #00ced1;
-  border: 2px solid #00ced1;
+  background-color: #9ffcdf;
+  color: #3d5544;
+  border: 2px solid #3d5544;
 }
 footer div {
   display: flex;
