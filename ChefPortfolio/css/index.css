@@ -45,6 +45,52 @@ html {
 .text-container h1 span {
   color: #3cc43c;
 }
+/* Footer Section Styles */
+footer {
+  background-color: #e0ffff;
+  padding: 3% 0;
+  text-align: center;
+}
+input,
+label,
+textarea {
+  width: 100%;
+  margin: 4% 0;
+}
+input,
+textarea {
+  border: none;
+  border-bottom: 3px solid #00ced1;
+  background-color: #e0ffff;
+}
+footer nav {
+  width: 80%;
+}
+footer nav:hover {
+  color: #fde769;
+}
+button {
+  width: 100%;
+  background-color: #00ced1;
+  color: #fde769;
+  padding: 2% 0;
+  border: 2px solid #fde769;
+  margin-bottom: 3%;
+}
+button:hover {
+  background-color: #fde769;
+  color: #00ced1;
+  border: 2px solid #00ced1;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* End Of Footer Section Styles */
 header {
   background-image: url(../images/home-banner.jpg);
   background-size: cover;
@@ -96,7 +142,7 @@ h4 {
   padding: 4% 0;
 }
 section {
-  padding: 4% 0;
+  padding: 0;
 }
 i {
   font-size: 4rem;
@@ -185,67 +231,20 @@ header {
   width: 40%;
 }
 /* End of Experience Section  */
-/* Footer Section Styles */
-footer {
-  background-color: #e0ffff;
-  padding: 3% 0;
-  text-align: center;
-}
-input,
-label,
-textarea {
-  width: 100%;
-  margin: 4% 0;
-}
-input,
-textarea {
-  border: none;
-  border-bottom: 3px solid #00ced1;
-  background-color: #e0ffff;
-}
-footer nav {
-  width: 80%;
-}
-footer nav:hover {
-  color: #fde769;
-}
-button {
-  width: 100%;
-  background-color: #00ced1;
-  color: #fde769;
-  padding: 2% 0;
-  border: 2px solid #fde769;
-  margin-bottom: 3%;
-}
-button:hover {
-  background-color: #fde769;
-  color: #00ced1;
-  border: 2px solid #00ced1;
-}
-footer div {
-  display: flex;
-  justify-content: center;
-}
-footer nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-/* End Of Footer Section Styles */
 /* Boxing Start */
 .CUISINE .Boxing {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 5% 5% 5% 5%;
 }
 .CUISINE .Boxing .box {
   width: 100px;
   height: 100px;
-  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0% 0;
   margin-left: 2%;
   width: 20%;
   padding: 0% 0% 0% 0%;
@@ -259,55 +258,41 @@ footer nav {
 .CUISINE .Boxing .food1 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 .CUISINE .Boxing .food2 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 .CUISINE .Boxing .food3 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 .CUISINE .Boxing .food4 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 .CUISINE .Boxing .food5 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 .CUISINE .Boxing .food6 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 .CUISINE .Boxing .food7 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 .CUISINE .Boxing .food8 {
   width: 42rem;
   height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
-}
-.CUISINE .Boxing .food9 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 /*Boxing End */
@@ -387,23 +372,83 @@ header {
 }
 @media (max-width:500px) {
   .CUISINE .Boxing {
-    width: 50%;
     height: 50%;
-    color: white;
-    display: flex;
     flex: wrap;
-  }
-}
-@media (max-width:500px) and (max-width:500px) {
-  .CUISINE .Boxing {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 }
-@media (max-width:500px) and (max-width:500px) and (max-width:500px) {
-  .CUISINE .Boxing .box .food2 {
+@media (max-width:500px) {
+  .CUISINE .Boxing .food img {
+    border-radius: 20%;
+    margin: 30% 10% 10% 10%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food1 img {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food2 img {
+    border-radius: 20%;
+    margin: 10% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food3 img {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food5 img {
+    border-radius: 20%;
+    margin: 10% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food6 img {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food7 img {
+    border-radius: 20%;
+    margin: 10% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food8 img {
+    display: none;
+  }
+}
+/* EXPERIENCE MEDIA QUARRIES */
+@media (max-width:500px) {
+  .big-container {
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 1rem 3rem 0.2rem;
+    justify-content: center;
+    align: left;
+  }
+}
+@media (max-width:500px) {
+  .big-container h2 {
+    text-align: left;
+  }
+  .big-container h3 {
+    text-align: left;
+  }
+  .big-container h4 {
+    text-align: left;
+  }
+  .big-container img {
     display: none;
   }
 }

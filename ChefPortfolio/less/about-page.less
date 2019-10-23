@@ -22,7 +22,7 @@ h4 {
   padding: 4% 0;
 }
 section {
-  padding: 4% 0;
+  padding: 0;
 }
 i {
   font-size: 4rem;
@@ -50,6 +50,7 @@ header {
   text-align: center;
 }
 /* End Of Header Styles */
+
 /* About Section Styles */
 #about {
   background-color: white;
@@ -118,53 +119,6 @@ header {
 }
 
 /* End of Experience Section  */
-/* Footer Section Styles */
-footer {
-  background-color: #e0ffff;
-  padding: 3% 0;
-  text-align: center;
-}
-
-input,
-label,
-textarea {
-  width: 100%;
-  margin: 4% 0;
-}
-input,
-textarea {
-  border: none;
-  border-bottom: 3px solid #00ced1;
-  background-color: #e0ffff;
-}
-footer nav {
-  width: 80%;
-}
-footer nav:hover {
-  color: #fde769;
-}
-button {
-  width: 100%;
-  background-color: #00ced1;
-  color: #fde769;
-  padding: 2% 0;
-  border: 2px solid #fde769;
-  margin-bottom: 3%;
-}
-button:hover {
-  background-color: #fde769;
-  color: #00ced1;
-  border: 2px solid #00ced1;
-}
-footer div {
-  display: flex;
-  justify-content: center;
-}
-footer nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-/* End Of Footer Section Styles */
 
 /* Boxing Start */
 .CUISINE {
@@ -172,16 +126,17 @@ footer nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 5% 5% 5% 5%;
 
     .box {
       width: 100px;
       height: 100px;
-      color: white;
+    //   color: white;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly;
-      margin: 0% 0;
+    //   margin: 10% 10% 10% 10%;
       margin-left: 2%;
       width: 20%;
       padding: 0% 0% 0% 0%;
@@ -198,7 +153,7 @@ footer nav {
     .food1 {
       width: 42rem;
       height: 13rem;
-      background: white;
+    //   background: white;
       margin: 20px 2.5%;
       //   display: flex;
       //   justify-content: space-evenly;
@@ -207,7 +162,7 @@ footer nav {
     .food2 {
       width: 42rem;
       height: 13rem;
-      background: white;
+    //   background: white;
       margin: 20px 2.5%;
       //   display: flex;
       //   justify-content: space-evenly;
@@ -216,7 +171,7 @@ footer nav {
     .food3 {
       width: 42rem;
       height: 13rem;
-      background: white;
+    //   background: white;
       margin: 20px 2.5%;
       //   display: flex;
       //   justify-content: space-evenly;
@@ -225,7 +180,7 @@ footer nav {
     .food4 {
       width: 42rem;
       height: 13rem;
-      background: white;
+    //   background: white;
       margin: 20px 2.5%;
       //   display: flex;
       //   justify-content: space-evenly;
@@ -234,7 +189,7 @@ footer nav {
     .food5 {
       width: 42rem;
       height: 13rem;
-      background: white;
+    //   background: white;
       margin: 20px 2.5%;
       //   display: flex;
       //   justify-content: space-evenly;
@@ -243,7 +198,7 @@ footer nav {
     .food6 {
       width: 42rem;
       height: 13rem;
-      background: white;
+    //   background: white;
       margin: 20px 2.5%;
       //   display: flex;
       //   justify-content: space-evenly;
@@ -252,7 +207,7 @@ footer nav {
     .food7 {
       width: 42rem;
       height: 13rem;
-      background: white;
+    //   background: white;
       margin: 20px 2.5%;
       //   display: flex;
       //   justify-content: space-evenly;
@@ -261,21 +216,13 @@ footer nav {
     .food8 {
       width: 42rem;
       height: 13rem;
-      background: white;
+    //   background: white;
       margin: 20px 2.5%;
       //   display: flex;
       //   justify-content: space-evenly;
       //   align-content: space-between;
     }
-    .food9 {
-      width: 42rem;
-      height: 13rem;
-      background: white;
-      margin: 20px 2.5%;
-      //   display: flex;
-      //   justify-content: space-evenly;
-      //   align-content: space-between;
-    }
+
   }
 }
 /*Boxing End */
@@ -355,23 +302,123 @@ header {
   }
   .Boxing {
     @media @phone {
-      width: 50%;
       height: 50%;
-      color: white;
       display: flex;
       flex: wrap;
-      @media @phone {
-        .Flex(space-between, center, column);
-        .box {
+      .Flex(space-between, center, column);
+    }
+    .food {
+      img {
+        @media @phone {
+          border-radius: 20%;
+          margin: 30% 10% 10% 10%;
+          padding: 0% 0% 0% 0%;
+        }
+      }
+    }
+    .food1 {
+      img {
+        @media @phone {
+          display: none;
+        }
+      }
+    }
+    .food2 {
+        img {
           @media @phone {
+            border-radius: 20%;
+            margin: 10% 0% 0% 0%;
+            padding: 0% 0% 0% 0%;
           }
-          .food2 {
-            @media @phone {
-              display: none;
-            }
+        }
+      }
+    .food3 {
+      img {
+        @media @phone {
+          display: none;
+        }
+      }
+    }
+    .food5 {
+        img {
+          @media @phone {
+            border-radius: 20%;
+            margin: 10% 0% 0% 0%;
+            padding: 0% 0% 0% 0%;
           }
+        }
+      }
+    .food6 {
+      img {
+        @media @phone {
+          display: none;
+        }
+      }
+    }
+    .food7 {
+        img {
+          @media @phone {
+            border-radius: 20%;
+            margin: 10% 0% 0% 0%;
+            padding: 0% 0% 0% 0%;
+          }
+        }
+      }
+    .food8 {
+      img {
+        @media @phone {
+            display: none;
+          
         }
       }
     }
   }
 }
+
+
+/* EXPERIENCE MEDIA QUARRIES */
+
+.big-container {
+    @media @phone {
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem 1rem 3rem .2rem;
+        justify-content: center;
+        align: left;
+      }
+      @media @phone {
+      h2 {
+        text-align: left;
+      }
+      h3 {
+        text-align: left;
+      }
+      h4 {
+        text-align: left;
+      }
+      img {
+          display: none;
+      }
+}
+}
+// .big-container {
+//     @media @phone {
+//         flex-direction: row;
+//         width: 100%;
+//         padding: 1rem 1rem 3rem 1rem;
+//         justify-content: center;
+//         align: left;
+//       }
+//       h2 {
+//         text-align: left;
+//       }
+//       h3 {
+//         text-align: left;
+//       }
+//       h4 {
+//         text-align: left;
+//       }
+//       img {
+//           display: none;
+//       }
+// }
