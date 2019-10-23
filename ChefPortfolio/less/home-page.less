@@ -155,24 +155,30 @@
     color:@light-main;
     height:30vh;
     padding: 3rem;
-    font-size:1.6rem;
+    font-size:1rem;
     
     nav{
         .Flex(space-between,@direction:column);
+        
         @media @phone{
             flex-direction:row;
             width:100%;
             padding-bottom:3rem;
+            
         }
         width:10%;
             a{
             text-decoration:none;
             color:inherit;
-            &:hover{
-                cursor:pointer;
+                &:hover{
+                    cursor:pointer;
+                    font-size:1.2rem;
+                    border-bottom:1px solid @light-main;
                 
+                }
             }
-        }
+            
+        
     }
     div{
         .Flex(space-between,@direction:column);
@@ -183,7 +189,7 @@
           @media @phone{
               align-self:center;
           }
-          font-size:1.2rem;
+          font-size:.9rem;
         }
         
     }
