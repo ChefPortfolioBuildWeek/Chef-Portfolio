@@ -215,25 +215,25 @@ header {
 }
 /* End Of Skills Section */
 /* Experience Section Styles */
-#experience {
+.experience {
   background-color: white;
 }
-#experience h2 {
+.experience h2 {
   text-align: center;
 }
-.big-container {
+.experience .big-container {
   display: flex;
   justify-content: space-between;
   margin: 2% 0;
 }
-.one {
+.experience .one {
   margin-left: 2%;
   width: 20%;
 }
-.two {
+.experience .two {
   width: 20%;
 }
-.three {
+.experience .three {
   width: 40%;
 }
 /* End of Experience Section  */
