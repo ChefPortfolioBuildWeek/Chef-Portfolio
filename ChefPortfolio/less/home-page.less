@@ -18,7 +18,7 @@
 
 .home-about{
     .Flex(space-around);
-    padding: 2.5rem 0;
+    padding: 10em 0;
     @media @phone{
         flex-direction:column;
         padding: 2.5rem 0 0 0;
@@ -144,3 +144,48 @@
     
 }
 
+.home-footer{
+    .Flex(space-between);
+    @media @phone{
+        flex-direction:column;
+        justify-items:center;
+        align-items:center;
+    }
+    background-color:@dark-main;
+    color:@light-main;
+    height:30vh;
+    padding: 3rem;
+    font-size:1.6rem;
+    
+    nav{
+        .Flex(space-between,@direction:column);
+        @media @phone{
+            flex-direction:row;
+            width:100%;
+            padding-bottom:3rem;
+        }
+        width:10%;
+            a{
+            text-decoration:none;
+            color:inherit;
+            &:hover{
+                cursor:pointer;
+                
+            }
+        }
+    }
+    div{
+        .Flex(space-between,@direction:column);
+        // width: 45%;
+        height:100%;
+        p{
+          align-self:flex-end; 
+          @media @phone{
+              align-self:center;
+          }
+          font-size:1.2rem;
+        }
+        
+    }
+   
+}
