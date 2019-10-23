@@ -246,6 +246,7 @@ h3 {
   align-items: inherits;
   background-color: #3d5544;
   color: #edf9f3;
+  height: 20rem;
   padding: 3rem;
   font-size: 1rem;
 }
@@ -263,12 +264,18 @@ h3 {
   align-items: inherits;
   width: 30%;
 }
+@media (max-width:620px) {
+  .home-footer .footer-nav-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home-footer .footer-nav-container nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: inherits;
-  width: 10%;
+  width: 50%;
 }
 @media (max-width:620px) {
   .home-footer .footer-nav-container nav {
@@ -291,7 +298,6 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   align-items: inherits;
-  height: 100%;
 }
 .home-footer div p {
   align-self: flex-end;

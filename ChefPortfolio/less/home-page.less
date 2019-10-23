@@ -153,11 +153,15 @@
     }
     background-color:@dark-main;
     color:@light-main;
-    // height:30vh;
+    height:20rem;
     padding: 3rem;
     font-size:1rem;
     .footer-nav-container{
         .Flex(space-between);
+        @media @phone{
+            flex-direction:column;
+            width:100%;
+        }
         width:30%;
        
         nav{
@@ -169,7 +173,7 @@
                 padding-bottom:3rem;
             
             }
-            width:10%;
+            width:50%;
                 a{
                 text-decoration:none;
                 color:inherit;
@@ -187,7 +191,7 @@
     div{
         .Flex(space-between,@direction:column);
         // width: 45%;
-        height:100%;
+        // height:100%;
         p{
           align-self:flex-end; 
           @media @phone{
