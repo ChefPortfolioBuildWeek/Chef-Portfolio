@@ -357,6 +357,7 @@ footer nav {
   }
 }
 /* General Styles */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -379,43 +380,51 @@ h4 {
   letter-spacing: 3px;
 }
 section {
-  padding: 0;
+  padding: 4% 0;
 }
 i {
   font-size: 4rem;
 }
 /* Header Styles */
 header {
-  height: 70vh;
+  background-image: url(../images/home-banner.jpg);
+  height: 40vh;
   background-color: #e0ffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-.title-container {
+header .title-container {
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
 }
-.main-titles {
+header .main-titles {
   width: 90%;
   color: white;
   text-align: center;
+  font-size: 1rem;
+}
+header h2 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
 }
 /* End Of Header Styles */
 /* About Section Styles */
 .about {
   background-color: #edf9f3;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .about h2 {
-  display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 .about .text {
   background-color: white;
@@ -423,9 +432,9 @@ header {
   text-align: center;
   width: 80%;
 }
-.about .p {
+.about p {
   text-align: justify;
-  font-weight: bold;
+  line-height: 3.5rem;
 }
 /* End Of About Section Styles */
 /* Skills Section Styles */
@@ -436,34 +445,40 @@ header {
   text-align: center;
   padding: 3% 0;
 }
-.skills h3 {
-  color: #9ffcdf;
-}
-.skills .contanier {
+.skills .skills-contanier {
   display: flex;
   justify-content: space-around;
 }
-.skills .contanier div {
+.skills .skills-contanier h3 {
+  color: #9ffcdf;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+}
+.skills .skills-contanier div {
   text-align: center;
   width: 25%;
 }
-.skills .contanier div p {
+.skills .skills-contanier p {
   text-align: justify;
 }
-/* End Of Skills Section */
+/* End Of Skills Section  */
 /* Experience Section Styles */
 .experience {
   background-color: white;
   /* End of Experience Section  */
   /* Footer Section Styles */
-  /* End of Experience Section  */
-  /* Boxing Start */
-  /*Boxing End */
-  /*Media Qurries*/
-  /* EXPERIENCE MEDIA QUARRIES */
+
 }
 .experience h2 {
   text-align: center;
+}
+.experience h3 {
+  font-size: 2rem;
+}
+.experience h4 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
 }
 .experience .big-container {
   display: flex;
@@ -500,6 +515,11 @@ header {
 .experience footer nav {
   width: 80%;
 }
+.experience footer nav:hover {
+  color: #fde769;
+}
+
+.CUISINE .Boxing {
 .experience .CUISINE .Boxing {
   display: flex;
   flex-direction: row;
@@ -521,7 +541,6 @@ header {
 .experience .CUISINE .Boxing .food {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
 }
 .experience .CUISINE .Boxing .food1 {
@@ -564,6 +583,9 @@ header {
   height: 13rem;
   margin: 20px 2.5%;
 }
+/*Boxing End */
+/*Media Qurries*/
+.about {
 .experience header {
   background-image: url(../images/home-banner.jpg);
   background-size: cover;
@@ -578,15 +600,17 @@ header {
   align-items: inherits;
 }
 @media (max-width:620px) {
-  .experience .about {
+  .about {
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
     justify-content: center;
-    align: center;
+    align-items: center;
   }
 }
 @media (max-width:620px) {
-  .experience .about text {
+  .about h2 {
+
+ 
     display-flex: center;
   }
   .experience .about h2 {
@@ -594,21 +618,23 @@ header {
   }
 }
 @media (max-width:620px) and (max-width:620px) {
-  .experience .about p {
+  .about p {
+
     padding: 2rem 0;
   }
 }
 @media (max-width:620px) {
-  .experience .skills {
+  .skills {
+
     flex-direction: column;
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
     justify-content: center;
-    align: center;
+    align-items: center;
   }
 }
 @media (max-width:620px) {
-  .experience .skills .contanier {
+  .skills .skills-contanier {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -617,29 +643,35 @@ header {
   }
 }
 @media (max-width:620px) {
-  .experience .skills .contanier div {
+
+  .skills .skills-contanier div {
+
     width: 100%;
   }
 }
 @media (max-width:620px) {
-  .experience .skills .contanier p {
+  .skills .skills-contanier p {
+
     padding: 2rem 0;
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE {
+  .CUISINE {
+
     flex-direction: column;
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
     justify-content: center;
-    align: center;
+    align-items: center;
   }
 }
 .experience .CUISINE h2 {
   text-align: center;
+  padding-bottom: 2rem;
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing {
+  .CUISINE .Boxing {
+
     height: 50%;
     flex: wrap;
     display: flex;
@@ -649,50 +681,63 @@ header {
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing .food img {
+  .CUISINE .Boxing .food img {
+
     border-radius: 20%;
     margin: 30% 10% 10% 10%;
     padding: 0% 0% 0% 0%;
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing .food1 img {
+  .CUISINE .Boxing .food1 img {
+
     display: none;
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing .food2 img {
+  .CUISINE .Boxing .food2 img {
+
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing .food3 img {
+  .CUISINE .Boxing .food3 img {
+
     display: none;
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing .food5 img {
+  .CUISINE .Boxing .food5 img {
+
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing .food6 img {
+  .CUISINE .Boxing .food6 img {
+
     display: none;
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing .food7 img {
+  .CUISINE .Boxing .food7 img {
+
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
   }
 }
 @media (max-width:620px) {
-  .experience .CUISINE .Boxing .food8 img {
+  .CUISINE .Boxing .food8 img {
+    display: none;
+  }
+}
+/* EXPERIENCE MEDIA QUARRIES */
+@media (max-width:620px) {
+  .big-container {
     display: none;
   }
 }
@@ -702,11 +747,12 @@ header {
     width: 100%;
     padding: 1rem 1rem 3rem 0.2rem;
     justify-content: center;
-    align: left;
+    align-items: left;
   }
 }
 @media (max-width:620px) {
-  .experience .big-container h2 {
+  .big-container h2 {
+
     text-align: left;
   }
   .experience .big-container h3 {
