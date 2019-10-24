@@ -24,7 +24,7 @@ html {
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v9/BngRUXZYTXPIvIBgJJSb6u92w7CGwRg.ttf) format('truetype');
 }
 html {
-  font-style: 'Roboto Slab' serif;
+  font-style: 'Roboto Slab', serif;
 }
 h2 {
   font-size: 2.4rem;
@@ -88,6 +88,53 @@ h3 {
 .text-container h1 span {
   color: #3cc43c;
 }
+/* Footer Section Styles */
+footer {
+  background-color: #3cc43c;
+  padding: 3rem 0;
+  text-align: center;
+}
+input,
+label,
+textarea {
+  width: 100%;
+  margin: 4% 0;
+  padding: 1rem 0;
+}
+input,
+textarea {
+  border: none;
+  border-bottom: 3px solid #3d5544;
+  background-color: #edf9f3;
+}
+footer nav {
+  width: 80%;
+}
+footer nav:hover {
+  color: #edf9f3;
+}
+button {
+  width: 100%;
+  background-color: #3d5544;
+  color: #9ffcdf;
+  padding: 2% 0;
+  border: 2px solid #9ffcdf;
+  margin-bottom: 3%;
+}
+button:hover {
+  background-color: #9ffcdf;
+  color: #3d5544;
+  border: 2px solid #3d5544;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* End Of Footer Section Styles */
 @media (min-width:1000px) {
   .continer {
     max-width: 1000px;
@@ -126,7 +173,7 @@ h3 {
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
     justify-content: center;
-    align: center;
+    align-items: center;
   }
 }
 .home-about .home-about-text h2 {
@@ -309,21 +356,6 @@ h3 {
     align-self: center;
   }
 }
-@font-face {
-  font-family: 'Fjalla One';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFrOF6lw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
-}
-/* End Of Skills Section */
 /* General Styles */
 * {
   box-sizing: border-box;
@@ -345,7 +377,6 @@ h3,
 h4 {
   font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 3px;
-  padding: 4% 0;
 }
 section {
   padding: 0;
@@ -423,6 +454,13 @@ header {
 /* Experience Section Styles */
 .experience {
   background-color: white;
+  /* End of Experience Section  */
+  /* Footer Section Styles */
+  /* End of Experience Section  */
+  /* Boxing Start */
+  /*Boxing End */
+  /*Media Qurries*/
+  /* EXPERIENCE MEDIA QUARRIES */
 }
 .experience h2 {
   text-align: center;
@@ -442,52 +480,34 @@ header {
 .experience .three {
   width: 40%;
 }
-/* End of Experience Section  */
-/* Footer Section Styles */
-footer {
+.experience footer {
   background-color: #e0ffff;
   padding: 3% 0;
   text-align: center;
 }
-input,
-label,
-textarea {
+.experience input,
+.experience label,
+.experience textarea {
   width: 100%;
   margin: 4% 0;
 }
-input,
-textarea {
+.experience input,
+.experience textarea {
   border: none;
   border-bottom: 3px solid #00ced1;
   background-color: #e0ffff;
 }
-footer nav {
+.experience footer nav {
   width: 80%;
 }
-button {
-  width: 100%;
-  background-color: #00ced1;
-  color: #fde769;
-  padding: 2% 0;
-  border: 2px solid #fde769;
-  margin-bottom: 3%;
-}
-button:hover {
-  background-color: #fde769;
-  color: #00ced1;
-  border: 2px solid #00ced1;
-}
-footer div {
-  display: flex;
-  justify-content: center;
-}
-footer nav {
+.experience .CUISINE .Boxing {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 5% 5% 5% 5%;
+  flex-wrap: wrap;
 }
-.CUISINE .Boxing .box {
+.experience .CUISINE .Boxing .box {
   width: 100px;
   height: 100px;
   display: flex;
@@ -498,90 +518,88 @@ footer nav {
   width: 20%;
   padding: 0% 0% 0% 0%;
 }
-.CUISINE .Boxing .food {
+.experience .CUISINE .Boxing .food {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food1 {
+.experience .CUISINE .Boxing .food1 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food2 {
+.experience .CUISINE .Boxing .food2 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food3 {
+.experience .CUISINE .Boxing .food3 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food4 {
+.experience .CUISINE .Boxing .food4 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food5 {
+.experience .CUISINE .Boxing .food5 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food6 {
+.experience .CUISINE .Boxing .food6 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food7 {
+.experience .CUISINE .Boxing .food7 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food8 {
+.experience .CUISINE .Boxing .food8 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-/*Boxing End */
-/*Media Qurries*/
-header {
+.experience header {
   background-image: url(../images/home-banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 45vh;
 }
-.about {
+.experience .about {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: inherits;
 }
-@media (max-width:500px) {
-  .about {
+@media (max-width:620px) {
+  .experience .about {
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
     justify-content: center;
     align: center;
   }
 }
-@media (max-width:500px) {
-  .about text {
+@media (max-width:620px) {
+  .experience .about text {
     display-flex: center;
   }
-  .about h2 {
+  .experience .about h2 {
     color: #3cc43c;
   }
 }
-@media (max-width:500px) and (max-width:500px) {
-  .about p {
+@media (max-width:620px) and (max-width:620px) {
+  .experience .about p {
     padding: 2rem 0;
   }
 }
-@media (max-width:500px) {
-  .skills {
+@media (max-width:620px) {
+  .experience .skills {
     flex-direction: column;
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
@@ -589,8 +607,8 @@ header {
     align: center;
   }
 }
-@media (max-width:500px) {
-  .skills .contanier {
+@media (max-width:620px) {
+  .experience .skills .contanier {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -598,18 +616,18 @@ header {
     width: 100%;
   }
 }
-@media (max-width:500px) {
-  .skills .contanier div {
+@media (max-width:620px) {
+  .experience .skills .contanier div {
     width: 100%;
   }
 }
-@media (max-width:500px) {
-  .skills .contanier p {
+@media (max-width:620px) {
+  .experience .skills .contanier p {
     padding: 2rem 0;
   }
 }
-@media (max-width:500px) {
-  .CUISINE {
+@media (max-width:620px) {
+  .experience .CUISINE {
     flex-direction: column;
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
@@ -617,11 +635,11 @@ header {
     align: center;
   }
 }
-.CUISINE h2 {
+.experience .CUISINE h2 {
   text-align: center;
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing {
     height: 50%;
     flex: wrap;
     display: flex;
@@ -630,57 +648,56 @@ header {
     align-items: center;
   }
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing .food img {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing .food img {
     border-radius: 20%;
     margin: 30% 10% 10% 10%;
     padding: 0% 0% 0% 0%;
   }
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing .food1 img {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing .food1 img {
     display: none;
   }
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing .food2 img {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing .food2 img {
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
   }
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing .food3 img {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing .food3 img {
     display: none;
   }
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing .food5 img {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing .food5 img {
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
   }
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing .food6 img {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing .food6 img {
     display: none;
   }
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing .food7 img {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing .food7 img {
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
   }
 }
-@media (max-width:500px) {
-  .CUISINE .Boxing .food8 img {
+@media (max-width:620px) {
+  .experience .CUISINE .Boxing .food8 img {
     display: none;
   }
 }
-/* EXPERIENCE MEDIA QUARRIES */
-@media (max-width:500px) {
-  .big-container {
+@media (max-width:620px) {
+  .experience .big-container {
     flex-direction: row;
     width: 100%;
     padding: 1rem 1rem 3rem 0.2rem;
@@ -688,32 +705,68 @@ header {
     align: left;
   }
 }
-@media (max-width:500px) {
-  .big-container h2 {
+@media (max-width:620px) {
+  .experience .big-container h2 {
     text-align: left;
   }
-  .big-container h3 {
+  .experience .big-container h3 {
     text-align: left;
   }
-  .big-container h4 {
+  .experience .big-container h4 {
     text-align: left;
   }
-  .big-container img {
+  .experience .big-container img {
     display: none;
   }
 }
-/*Boxing End */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: inherits;
+  padding: 3rem;
+}
+main img {
+  width: 45%;
+}
+@media (max-width:620px) {
+  main img {
+    display: none;
+  }
+}
 .contact-form {
   padding: 3rem 3rem;
+  width: 45%;
+}
+@media (max-width:620px) {
+  .contact-form {
+    width: 100%;
+  }
 }
 .contact-form form input {
   padding: 1rem 1rem;
-  width: 50%;
+  width: 100%;
   background-color: white;
   display: block;
+}
+.contact-form form input:focus {
+  outline: none;
+  border-bottom-color: lightgreen;
 }
 @media (max-width:620px) {
   .contact-form form input {
     width: 100%;
   }
+}
+.contact-form form button {
+  width: 10rem;
+  color: #edf9f3;
+  border: 1px solid #3d5544;
+  font-weight: 700;
+  text-align: center;
+}
+.contact-form form button:hover {
+  color: #3d5544;
+  background-color: #edf9f3;
+  cursor: pointer;
 }
