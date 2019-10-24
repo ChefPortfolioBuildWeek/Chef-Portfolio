@@ -24,7 +24,7 @@ html {
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v9/BngRUXZYTXPIvIBgJJSb6u92w7CGwRg.ttf) format('truetype');
 }
 html {
-  font-style: 'Roboto Slab' serif;
+  font-style: 'Roboto Slab', serif;
 }
 h2 {
   font-size: 2.4rem;
@@ -201,6 +201,7 @@ footer nav {
 }
 .home-about img {
   width: 35%;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 @media (max-width:620px) {
   .home-about img {
@@ -265,6 +266,7 @@ footer nav {
 }
 .home-app-info .content-app-info div img {
   width: 40%;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 @media (max-width:620px) {
   .home-app-info .content-app-info div img {
@@ -293,8 +295,7 @@ footer nav {
   align-items: inherits;
   background-color: #3d5544;
   color: #edf9f3;
-  height: 20rem;
-  padding: 3rem;
+  padding: 4rem;
   font-size: 1rem;
 }
 @media (max-width:620px) {
@@ -309,6 +310,7 @@ footer nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: inherits;
+  padding: 2rem inherit 2rem inherit;
   width: 30%;
 }
 @media (max-width:620px) {
@@ -337,8 +339,7 @@ footer nav {
 }
 .home-footer .footer-nav-container nav a:hover {
   cursor: pointer;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #edf9f3;
+  color: #3cc43c;
 }
 .home-footer div {
   display: flex;
@@ -356,9 +357,27 @@ footer nav {
   }
 }
 /* General Styles */
-.about-container {
-  font-size: 1.8rem;
-  font-family: 'Roboto Slab', serif;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 2;
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 3px;
 }
 section {
   padding: 4% 0;
@@ -449,6 +468,7 @@ header h2 {
   background-color: white;
   /* End of Experience Section  */
   /* Footer Section Styles */
+
 }
 .experience h2 {
   text-align: center;
@@ -498,15 +518,16 @@ header h2 {
 .experience footer nav:hover {
   color: #fde769;
 }
-/* End of Experience Section  */
-/* Boxing Start */
+
 .CUISINE .Boxing {
+.experience .CUISINE .Boxing {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 5% 5% 5% 5%;
+  flex-wrap: wrap;
 }
-.CUISINE .Boxing .box {
+.experience .CUISINE .Boxing .box {
   width: 100px;
   height: 100px;
   display: flex;
@@ -517,47 +538,47 @@ header h2 {
   width: 20%;
   padding: 0% 0% 0% 0%;
 }
-.CUISINE .Boxing .food {
+.experience .CUISINE .Boxing .food {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food1 {
+.experience .CUISINE .Boxing .food1 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food2 {
+.experience .CUISINE .Boxing .food2 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food3 {
+.experience .CUISINE .Boxing .food3 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food4 {
+.experience .CUISINE .Boxing .food4 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food5 {
+.experience .CUISINE .Boxing .food5 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food6 {
+.experience .CUISINE .Boxing .food6 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food7 {
+.experience .CUISINE .Boxing .food7 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
 }
-.CUISINE .Boxing .food8 {
+.experience .CUISINE .Boxing .food8 {
   width: 42rem;
   height: 13rem;
   margin: 20px 2.5%;
@@ -565,6 +586,14 @@ header h2 {
 /*Boxing End */
 /*Media Qurries*/
 .about {
+.experience header {
+  background-image: url(../images/home-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45vh;
+}
+.experience .about {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -580,16 +609,23 @@ header h2 {
 }
 @media (max-width:620px) {
   .about h2 {
+
+ 
+    display-flex: center;
+  }
+  .experience .about h2 {
     color: #3cc43c;
   }
 }
 @media (max-width:620px) and (max-width:620px) {
   .about p {
+
     padding: 2rem 0;
   }
 }
 @media (max-width:620px) {
   .skills {
+
     flex-direction: column;
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
@@ -607,17 +643,21 @@ header h2 {
   }
 }
 @media (max-width:620px) {
+
   .skills .skills-contanier div {
+
     width: 100%;
   }
 }
 @media (max-width:620px) {
   .skills .skills-contanier p {
+
     padding: 2rem 0;
   }
 }
 @media (max-width:620px) {
   .CUISINE {
+
     flex-direction: column;
     width: 100%;
     padding: 1rem 1rem 3rem 1rem;
@@ -625,12 +665,13 @@ header h2 {
     align-items: center;
   }
 }
-.CUISINE h2 {
+.experience .CUISINE h2 {
   text-align: center;
   padding-bottom: 2rem;
 }
 @media (max-width:620px) {
   .CUISINE .Boxing {
+
     height: 50%;
     flex: wrap;
     display: flex;
@@ -641,6 +682,7 @@ header h2 {
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food img {
+
     border-radius: 20%;
     margin: 30% 10% 10% 10%;
     padding: 0% 0% 0% 0%;
@@ -648,11 +690,13 @@ header h2 {
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food1 img {
+
     display: none;
   }
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food2 img {
+
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
@@ -660,11 +704,13 @@ header h2 {
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food3 img {
+
     display: none;
   }
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food5 img {
+
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
@@ -672,11 +718,13 @@ header h2 {
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food6 img {
+
     display: none;
   }
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food7 img {
+
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
@@ -690,6 +738,11 @@ header h2 {
 /* EXPERIENCE MEDIA QUARRIES */
 @media (max-width:620px) {
   .big-container {
+    display: none;
+  }
+}
+@media (max-width:620px) {
+  .experience .big-container {
     flex-direction: row;
     width: 100%;
     padding: 1rem 1rem 3rem 0.2rem;
@@ -699,28 +752,67 @@ header h2 {
 }
 @media (max-width:620px) {
   .big-container h2 {
+
     text-align: left;
   }
-  .big-container h3 {
+  .experience .big-container h3 {
     text-align: left;
   }
-  .big-container h4 {
+  .experience .big-container h4 {
     text-align: left;
   }
-  .big-container img {
+  .experience .big-container img {
+    display: none;
+  }
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: inherits;
+  padding: 3rem;
+}
+main img {
+  width: 45%;
+}
+@media (max-width:620px) {
+  main img {
     display: none;
   }
 }
 .contact-form {
   padding: 3rem 3rem;
+  width: 45%;
+}
+@media (max-width:620px) {
+  .contact-form {
+    width: 100%;
+  }
 }
 .contact-form form input {
   padding: 1rem 1rem;
-  width: 50%;
+  width: 100%;
+  background-color: white;
   display: block;
+}
+.contact-form form input:focus {
+  outline: none;
+  border-bottom-color: lightgreen;
 }
 @media (max-width:620px) {
   .contact-form form input {
     width: 100%;
   }
+}
+.contact-form form button {
+  width: 10rem;
+  color: #edf9f3;
+  border: 1px solid #3d5544;
+  font-weight: 700;
+  text-align: center;
+}
+.contact-form form button:hover {
+  color: #3d5544;
+  background-color: #edf9f3;
+  cursor: pointer;
 }
