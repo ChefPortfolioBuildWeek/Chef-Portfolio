@@ -418,7 +418,7 @@ header h2 {
   text-align: justify;
   line-height: 3.5rem;
 }
-/* End Of About Section Styles */
+/* End Of About Section Styles  */
 /* Skills Section Styles */
 .skills {
   background-color: #3cc43c;
@@ -643,6 +643,7 @@ footer nav:hover {
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food img {
+    max-width: 250%;
     border-radius: 20%;
     margin: 30% 10% 10% 10%;
     padding: 0% 0% 0% 0%;
@@ -655,6 +656,7 @@ footer nav:hover {
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food2 img {
+    max-width: 250%;
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
@@ -667,6 +669,7 @@ footer nav:hover {
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food5 img {
+    max-width: 250%;
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
@@ -679,6 +682,7 @@ footer nav:hover {
 }
 @media (max-width:620px) {
   .CUISINE .Boxing .food7 img {
+    max-width: 250%;
     border-radius: 20%;
     margin: 10% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
