@@ -24,7 +24,7 @@ html {
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v9/BngRUXZYTXPIvIBgJJSb6u92w7CGwRg.ttf) format('truetype');
 }
 html {
-  font-style: 'Roboto Slab' serif;
+  font-style: 'Roboto Slab', serif;
 }
 h2 {
   font-size: 2.4rem;
@@ -201,6 +201,7 @@ footer nav {
 }
 .home-about img {
   width: 35%;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 @media (max-width:620px) {
   .home-about img {
@@ -265,6 +266,7 @@ footer nav {
 }
 .home-app-info .content-app-info div img {
   width: 40%;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 @media (max-width:620px) {
   .home-app-info .content-app-info div img {
@@ -293,8 +295,7 @@ footer nav {
   align-items: inherits;
   background-color: #3d5544;
   color: #edf9f3;
-  height: 20rem;
-  padding: 3rem;
+  padding: 4rem;
   font-size: 1rem;
 }
 @media (max-width:620px) {
@@ -309,6 +310,7 @@ footer nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: inherits;
+  padding: 2rem inherit 2rem inherit;
   width: 30%;
 }
 @media (max-width:620px) {
@@ -337,8 +339,7 @@ footer nav {
 }
 .home-footer .footer-nav-container nav a:hover {
   cursor: pointer;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #edf9f3;
+  color: #3cc43c;
 }
 .home-footer div {
   display: flex;
@@ -505,6 +506,7 @@ footer nav:hover {
   flex-direction: row;
   justify-content: space-between;
   margin: 5% 5% 5% 5%;
+  flex-wrap: wrap;
 }
 .CUISINE .Boxing .box {
   width: 100px;
@@ -711,16 +713,54 @@ footer nav:hover {
     display: none;
   }
 }
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: inherits;
+  padding: 3rem;
+}
+main img {
+  width: 45%;
+}
+@media (max-width:620px) {
+  main img {
+    display: none;
+  }
+}
 .contact-form {
   padding: 3rem 3rem;
+  width: 45%;
+}
+@media (max-width:620px) {
+  .contact-form {
+    width: 100%;
+  }
 }
 .contact-form form input {
   padding: 1rem 1rem;
-  width: 50%;
+  width: 100%;
+  background-color: white;
   display: block;
+}
+.contact-form form input:focus {
+  outline: none;
+  border-bottom-color: lightgreen;
 }
 @media (max-width:620px) {
   .contact-form form input {
     width: 100%;
   }
+}
+.contact-form form button {
+  width: 10rem;
+  color: #edf9f3;
+  border: 1px solid #3d5544;
+  font-weight: 700;
+  text-align: center;
+}
+.contact-form form button:hover {
+  color: #3d5544;
+  background-color: #edf9f3;
+  cursor: pointer;
 }
