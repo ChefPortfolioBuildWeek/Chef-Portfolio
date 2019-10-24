@@ -355,9 +355,6 @@ header {
   }
 }
 @media (max-width:500px) {
-  .about text {
-    display-flex: center;
-  }
   .about h2 {
     color: #3cc43c;
   }
