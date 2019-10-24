@@ -323,6 +323,7 @@ h3 {
   font-display: swap;
   src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
 }
+/* End Of Skills Section */
 /* General Styles */
 * {
   box-sizing: border-box;
@@ -336,14 +337,18 @@ html {
 body {
   line-height: 2;
   font-size: 1.5rem;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 3px;
+  padding: 4% 0;
+}
+section {
+  padding: 0;
 }
 i {
   font-size: 4rem;
@@ -358,7 +363,7 @@ header {
   background-attachment: fixed;
 }
 .title-container {
-  height: 80vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,62 +375,71 @@ header {
 }
 /* End Of Header Styles */
 /* About Section Styles */
-#about {
-  background-color: white;
+.about {
+  background-color: #edf9f3;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-#about .text {
+.about h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .text {
   background-color: white;
   padding: 4%;
   text-align: center;
   width: 80%;
 }
-.text p {
+.about .p {
   text-align: justify;
   font-weight: bold;
 }
 /* End Of About Section Styles */
 /* Skills Section Styles */
-#skills {
+.skills {
   background-color: #3cc43c;
 }
-#skills h2 {
+.skills h2 {
   text-align: center;
   padding: 3% 0;
 }
-#skills .contanier {
+.skills h3 {
+  color: #9ffcdf;
+}
+.skills .contanier {
   display: flex;
   justify-content: space-around;
 }
-#skills .contanier div {
+.skills .contanier div {
   text-align: center;
   width: 25%;
 }
-#skills .contanier div p {
+.skills .contanier div p {
   text-align: justify;
 }
 /* End Of Skills Section */
 /* Experience Section Styles */
-#experience {
+.experience {
   background-color: white;
 }
-#experience h2 {
+.experience h2 {
   text-align: center;
 }
-.big-container {
+.experience .big-container {
   display: flex;
   justify-content: space-between;
   margin: 2% 0;
 }
-.one {
+.experience .one {
   margin-left: 2%;
   width: 20%;
 }
-.two {
+.experience .two {
   width: 20%;
 }
-.three {
+.experience .three {
   width: 40%;
 }
 /* End of Experience Section  */
@@ -469,116 +483,224 @@ footer div {
 }
 footer nav {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5% 5% 5% 5%;
 }
-/* End Of Footer Section Styles */
-/* Boxing Start */
-.box {
+.CUISINE .Boxing .box {
   width: 100px;
   height: 100px;
-  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0% 0;
   margin-left: 2%;
   width: 20%;
+  padding: 0% 0% 0% 0%;
 }
-.Boxing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.food {
+.CUISINE .Boxing .food {
   width: 42rem;
   height: 13rem;
   background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food1 {
+.CUISINE .Boxing .food1 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food2 {
+.CUISINE .Boxing .food2 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food3 {
+.CUISINE .Boxing .food3 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food4 {
+.CUISINE .Boxing .food4 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food5 {
+.CUISINE .Boxing .food5 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food6 {
+.CUISINE .Boxing .food6 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food7 {
+.CUISINE .Boxing .food7 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food8 {
+.CUISINE .Boxing .food8 {
   width: 42rem;
   height: 13rem;
-  background: white;
   margin: 20px 2.5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
-.food9 {
-  width: 42rem;
-  height: 13rem;
-  background: white;
-  margin: 20px 2.5%;
+/*Boxing End */
+/*Media Qurries*/
+header {
+  background-image: url(../images/home-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45vh;
+}
+.about {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  align-content: space-between;
+  align-items: inherits;
+}
+@media (max-width:500px) {
+  .about {
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+}
+@media (max-width:500px) {
+  .about text {
+    display-flex: center;
+  }
+  .about h2 {
+    color: #3cc43c;
+  }
+}
+@media (max-width:500px) and (max-width:500px) {
+  .about p {
+    padding: 2rem 0;
+  }
+}
+@media (max-width:500px) {
+  .skills {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+}
+@media (max-width:500px) {
+  .skills .contanier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .skills .contanier div {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .skills .contanier p {
+    padding: 2rem 0;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align: center;
+  }
+}
+.CUISINE h2 {
+  text-align: center;
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing {
+    height: 50%;
+    flex: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food img {
+    border-radius: 20%;
+    margin: 30% 10% 10% 10%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food1 img {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food2 img {
+    border-radius: 20%;
+    margin: 10% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food3 img {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food5 img {
+    border-radius: 20%;
+    margin: 10% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food6 img {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food7 img {
+    border-radius: 20%;
+    margin: 10% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+@media (max-width:500px) {
+  .CUISINE .Boxing .food8 img {
+    display: none;
+  }
+}
+/* EXPERIENCE MEDIA QUARRIES */
+@media (max-width:500px) {
+  .big-container {
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 1rem 3rem 0.2rem;
+    justify-content: center;
+    align: left;
+  }
+}
+@media (max-width:500px) {
+  .big-container h2 {
+    text-align: left;
+  }
+  .big-container h3 {
+    text-align: left;
+  }
+  .big-container h4 {
+    text-align: left;
+  }
+  .big-container img {
+    display: none;
+  }
 }
 /*Boxing End */
 .contact-form {
